@@ -49,7 +49,7 @@
     <section class="blogs pt pb">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7 col-xl-8">
                     <div class="blog-main">
                         <?php 
                         $args = array(
@@ -84,7 +84,7 @@
                 </div>
 
 
-                <div class="col-md-4">
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-4">
                     <div class="blog-sidebar bg-sec">
                         <div class="blog-list">
                             <div class="heading-section d-flex justify-content-between align-items-center">
@@ -442,7 +442,7 @@
                     $query = new WP_Query($args);
                     if ($query->have_posts()) {
                         while ($query->have_posts()) : $query->the_post(); ?>
-                            <div class="col-md-3">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
                                 <div class="blog-col">
                                     <div class="blog-media">
                                         <a href="<?php the_permalink(); ?>" title="">
