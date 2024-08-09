@@ -1382,7 +1382,7 @@ ul#web-links.hidden {
     display: none;
 }
 .web-button .mt-2, .my-2 {
-    margin-top: 0.1rem !important;
+    margin-top: 0.2rem !important;
     border-radius: 50%;
 }
 /*End web icons*/
