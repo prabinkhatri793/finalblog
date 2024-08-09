@@ -8,7 +8,13 @@ function limit_characters($text, $char_limit) {
     return $text;
 }
 
-
+function enqueue_stellarnav_styles() {
+    // Get the current timestamp to use as version
+    $version = time();
+    // Enqueue the stylesheet
+    wp_enqueue_style('stellarnav-style', get_template_directory_uri() . '/css/stellarnav.min.css', array(), $version);
+}
+add_action('wp_enqueue_scripts', 'enqueue_stellarnav_styles');
 function enqueue_bootstrap() {
     wp_enqueue_style('bootstrap-css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
     wp_enqueue_script('bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js', array('jquery'), null, true);
