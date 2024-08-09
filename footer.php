@@ -116,6 +116,7 @@ $('.owl-carousel').owlCarousel({
 }
 
 </script>
+
 <?php wp_footer(); ?>
 </body>
 

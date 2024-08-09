@@ -441,3 +441,5 @@ function custom_widget_area() {
     ));
 }
 add_action('widgets_init', 'custom_widget_area');
+
+

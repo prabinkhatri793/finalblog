@@ -101,14 +101,35 @@
                     <button type="submit" class="btn px-2 py-1"><i class="fas fa-search" aria-hidden="true"></i></button>
                   </form>
                 </div>
-                <!-- Social Media Pop Bottom -->
+                <!-- Website logos Pop Bottom -->
                 <?php if ( is_active_sidebar( 'custom-widget-area' ) ) : ?>
                     <div id="custom-widget-area" class="widget-area">
                         <?php dynamic_sidebar( 'custom-widget-area' ); ?>
                     </div>
                 <?php endif; ?>
+                
+
+                <script>
+                    // Function to toggle the visibility of the web-links
+                function toggleWebLinks() {
+                    var links = document.getElementById("web-links");
+                    links.classList.toggle("hidden");
+                }
+
+                // Function to close the dropdown if clicking outside of it
+                document.addEventListener('click', function(event) {
+                    var isClickInside = document.getElementById('web-pop-bottom').contains(event.target);
+                    var links = document.getElementById("web-links");
+
+                    if (!isClickInside && !links.classList.contains('hidden')) {
+                        links.classList.add('hidden');
+                    }
+                });
+
+                </script>
             </nav>
         </div>
     </div>
 
 </head>
+
