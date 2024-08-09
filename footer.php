@@ -6,7 +6,9 @@
                     <div class="col-xl-4 col-lg-4 mb-50">
                         <div class="footer-widget">
                             <div class="footer-logo">
-                                <h1>Our Logo<h1>
+                                <a class="logo" href="<?php echo home_url(); ?>" title="logo">
+                                    <img src="<?php bloginfo('template_url'); ?>/images/GWF Blog Logo.jpg" alt="Logo" class="h-10">
+                                </a>
                             </div>
                             <div class="footer-text">
                                 <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing

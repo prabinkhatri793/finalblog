@@ -88,7 +88,7 @@
         <div class="container mx-auto px-4">
             <nav class="flex items-center justify-between py-4">
                 <a class="logo" href="<?php echo home_url(); ?>" title="logo">
-                    <img src="<?php bloginfo('template_url'); ?>/images/aswdfdsfdsfdsf.webp" alt="Logo" class="h-10">
+                    <img src="<?php bloginfo('template_url'); ?>/images/GWF Blog Logo.jpg" alt="Logo" class="h-10">
                 </a>
                 <div class="menu mr-4">
                     <?php

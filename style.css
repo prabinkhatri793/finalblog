@@ -98,7 +98,8 @@ img {
     padding: 2px 0;
 }
 .logo img {
-    height: 45px;
+    height: 43px;
+    padding: 5px 0px;
 }
 .navigation-bar {
     position: sticky;
