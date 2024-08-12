@@ -30,7 +30,7 @@
                      </div>
                 </div>                
                 <div class="item">
-                    <img src="<?php the_field('banner3', 'option'); ?>" alt="Third Slider Image">
+                    <img src="<?php the_field('banner3', 'option'); ?>" alt="Third Slider Images">
                     <div class="cover">
                         <div class="container">
                             <div class="header-content">
