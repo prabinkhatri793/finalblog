@@ -4,40 +4,40 @@
    <header>
             <div class="owl-carousel owl-theme">
                 <div class="item">
-                    <img src="https://blog.gowithfund.com/wp-content/uploads/2024/08/depositphotos_215132512-stock-photo-chef-cook-preparing-vegetables-his.webp" alt="images not found">
+                    <img src="<?php the_field('banner1', 'option'); ?>" alt="First Slider Image">
                     <div class="cover">
                         <div class="container">
                             <div class="header-content">
                                 <div class="line"></div>
-                                <h2>Teimagine Digital Experience with</h2>
-                                <h1>Start-ups and solutions</h1>
-                                <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4>
+                                <h2><?php the_field('first_image_text_1', 'option'); ?></h2>
+                                <h1><?php the_field('first_image_text_2', 'option'); ?></h1>
+                                <h4><?php the_field('first_image_text_3', 'option'); ?></h4>
                             </div>
                         </div>
                      </div>
                 </div>                    
                 <div class="item">
-                    <img src="https://blog.gowithfund.com/wp-content/uploads/2024/08/tech-news-post-featured-img-28.jpg" alt="images not found">
+                    <img src="<?php the_field('banner2', 'option'); ?>" alt="Second Slider Image">
                     <div class="cover">
                         <div class="container">
                             <div class="header-content">
                                 <div class="line animated bounceInLeft"></div>
-                                <h2>Reimagine Digital Experience with</h2>
-                                <h1>Intelligent solutions</h1>
-                                <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4>
+                                <h2><?php the_field('second_image_text_1', 'option'); ?></h2>
+                                <h1><?php the_field('second_image_text_2', 'option'); ?></h1>
+                                <h4><?php the_field('second_image_text_3', 'option'); ?></h4>
                             </div>
                         </div>
                      </div>
                 </div>                
                 <div class="item">
-                    <img src="<?php the_field('banner1', 'option'); ?>" alt="images not found">
+                    <img src="<?php the_field('banner3', 'option'); ?>" alt="Third Slider Image">
                     <div class="cover">
                         <div class="container">
                             <div class="header-content">
                                 <div class="line animated bounceInLeft"></div>
-                                <h2><?php the_field('first_image_text_1', 'option'); ?></h2>
-                                <h1><?php the_field('first_image_text_2', 'option'); ?></h1>
-                                <h4><?php the_field('first_image_text_3', 'option'); ?></h4>
+                                <h2><?php the_field('third_image_text_1', 'option'); ?></h2>
+                                <h1><?php the_field('third_image_text_2', 'option'); ?></h1>
+                                <h4><?php the_field('third_image_text_3', 'option'); ?></h4>
                             </div>
                         </div>
                      </div>
