@@ -11,7 +11,7 @@
             <h3>Recent Posts</h3>
         </div>
         <div class="view-all">
-            <a href="<?php echo get_category_link(get_cat_ID('apps')); ?>"><i class="fas fa-long-arrow-alt-right"></i> View All</a>
+            <a href="https://blog.gowithfund.com/recent-post/"><i class="fas fa-long-arrow-alt-right"></i> View All</a>
         </div>
     </div>
       <ul>
@@ -42,7 +42,7 @@
                     <h3>Popular Posts</h3>
                 </div>
                 <div class="view-all">
-                    <a href="<?php echo get_category_link(get_cat_ID('apps')); ?>"><i class="fas fa-long-arrow-alt-right"></i> View All</a>
+                    <a href="https://blog.gowithfund.com/popular-posts/"><i class="fas fa-long-arrow-alt-right"></i> View All</a>
                 </div>
             </div>
             <ul class="blog-posts">

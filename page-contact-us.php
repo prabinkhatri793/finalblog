@@ -20,8 +20,7 @@ get_header(); ?>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-
-                Contact Us
+                
             </div>
         </div>
     </div>
