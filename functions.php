@@ -13,6 +13,7 @@ function enqueue_stellarnav_styles() {
     $version = time();
     // Enqueue the stylesheet
     wp_enqueue_style('stellarnav-style', get_template_directory_uri() . '/css/stellarnav.min.css', array(), $version);
+    wp_enqueue_style('stellarnav-style', get_template_directory_uri() . '/style.css', array(), $version);
 }
 add_action('wp_enqueue_scripts', 'enqueue_stellarnav_styles');
 function enqueue_bootstrap() {
