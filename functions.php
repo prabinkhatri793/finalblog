@@ -118,28 +118,6 @@ add_action( 'init', 'services_post_type' );
 
 
 
-function projects_post_type() {
-
-    $args = array(
-
-        'public'    => true,
-
-        'label'     => __( 'Project', 'textdomain' ),
-
-        'menu_icon' => 'dashicons-admin-site-alt3',
-
-        'supports' => array( 'title', 'editor', 'excerpt','thumbnail','page-attributes') 
-
-    );
-
-    register_post_type( 'project', $args );
-
-}
-
-add_action( 'init', 'projects_post_type' );
-
-
-
 /* 
 
  * Enables the HTTP Strict Transport Security (HSTS) header in WordPress.

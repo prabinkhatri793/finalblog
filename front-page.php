@@ -30,14 +30,14 @@
                      </div>
                 </div>                
                 <div class="item">
-                    <img src="https://blog.gowithfund.com/wp-content/uploads/2024/08/computer-2982270_640.jpg" alt="images not found">
+                    <img src="<?php the_field('banner1', 'option'); ?>" alt="images not found">
                     <div class="cover">
                         <div class="container">
                             <div class="header-content">
                                 <div class="line animated bounceInLeft"></div>
-                                <h2>Peimagine Digital Experience with</h2>
-                                <h1>Intelligent Solutions</h1>
-                                <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4>
+                                <h2><?php the_field('first_image_text_1', 'option'); ?></h2>
+                                <h1><?php the_field('first_image_text_2', 'option'); ?></h1>
+                                <h4><?php the_field('first_image_text_3', 'option'); ?></h4>
                             </div>
                         </div>
                      </div>
