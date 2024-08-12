@@ -84,52 +84,52 @@
     </div>
 </div>
 
-    <div class="sn-header navigation-bar stick bg-transparent">
-        <div class="container mx-auto px-4">
-            <nav class="flex items-center justify-between py-4">
-                <a class="logo" href="<?php echo home_url(); ?>" title="logo">
-                    <img src="<?php bloginfo('template_url'); ?>/images/GWF Blog Logo.jpg" alt="Logo" class="h-10">
-                </a>
-                <div class="menu mr-4">
-                    <?php
-                    wp_nav_menu(array('theme_location' => 'menu-1', 'container_class' => 'stellarnav'));
-                    ?>
+<div class="sn-header navigation-bar stick bg-transparent">
+    <div class="container mx-auto px-4">
+        <nav class="flex items-center justify-between py-4">
+            <a class="logo" href="<?php echo home_url(); ?>" title="logo">
+                <img src="<?php bloginfo('template_url'); ?>/images/GWF Blog Logo.jpg" alt="Logo" class="h-10">
+            </a>
+            <div class="menu mr-4">
+                <?php
+                wp_nav_menu(array('theme_location' => 'menu-1', 'container_class' => 'stellarnav'));
+                ?>
+            </div>
+            <div class="search-bar hidden md:flex items-center">
+              <form action="<?php echo home_url();?>" method="get" class="flex items-center">
+                <input type="text" name="s" placeholder="Search..." class="form-control px-2 py-1">
+                <button type="submit" class="btn px-2 py-1"><i class="fas fa-search" aria-hidden="true"></i></button>
+              </form>
+            </div>
+            <!-- Website logos Pop Bottom -->
+            <?php if ( is_active_sidebar( 'custom-widget-area' ) ) : ?>
+                <div id="custom-widget-area" class="widget-area">
+                    <?php dynamic_sidebar( 'custom-widget-area' ); ?>
                 </div>
-                <div class="search-bar hidden md:flex items-center">
-                  <form action="<?php echo home_url();?>" method="get" class="flex items-center">
-                    <input type="text" name="s" placeholder="Search..." class="form-control px-2 py-1">
-                    <button type="submit" class="btn px-2 py-1"><i class="fas fa-search" aria-hidden="true"></i></button>
-                  </form>
-                </div>
-                <!-- Website logos Pop Bottom -->
-                <?php if ( is_active_sidebar( 'custom-widget-area' ) ) : ?>
-                    <div id="custom-widget-area" class="widget-area">
-                        <?php dynamic_sidebar( 'custom-widget-area' ); ?>
-                    </div>
-                <?php endif; ?>
-                
+            <?php endif; ?>
+            
 
-                <script>
-                    // Function to toggle the visibility of the web-links
-                function toggleWebLinks() {
-                    var links = document.getElementById("web-links");
-                    links.classList.toggle("hidden");
+            <script>
+                // Function to toggle the visibility of the web-links
+            function toggleWebLinks() {
+                var links = document.getElementById("web-links");
+                links.classList.toggle("hidden");
+            }
+
+            // Function to close the dropdown if clicking outside of it
+            document.addEventListener('click', function(event) {
+                var isClickInside = document.getElementById('web-pop-bottom').contains(event.target);
+                var links = document.getElementById("web-links");
+
+                if (!isClickInside && !links.classList.contains('hidden')) {
+                    links.classList.add('hidden');
                 }
+            });
 
-                // Function to close the dropdown if clicking outside of it
-                document.addEventListener('click', function(event) {
-                    var isClickInside = document.getElementById('web-pop-bottom').contains(event.target);
-                    var links = document.getElementById("web-links");
-
-                    if (!isClickInside && !links.classList.contains('hidden')) {
-                        links.classList.add('hidden');
-                    }
-                });
-
-                </script>
-            </nav>
-        </div>
+            </script>
+        </nav>
     </div>
+</div>
 
 </head>
 

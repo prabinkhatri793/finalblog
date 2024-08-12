@@ -45,7 +45,6 @@
 							<?php the_content();?>
 						</div>
 					</div>
-					<!-- Start Must Read Sections -->
 					<section class="blogs col-4-items pt pb">
 					    <div class="">
 					        <div class="heading-section d-flex justify-content-between align-items-center">
@@ -96,7 +95,9 @@
 					        </div>
 					    </div>
 					</section>
+					
 					<!-- End Must Read Sections -->
+
 				</div>
 				<div class="col-md-4">
 					<?php get_sidebar();?>
